@@ -584,6 +584,11 @@ media-query
 
 
 @media (min-width: 320px) {
+
+    header .logo {
+        flex: 1;
+    }
+
     #navlinks {
         display: none;
     }
@@ -645,6 +650,9 @@ media-query
 }
 
 @media (min-width: 992px) {
+    header .logo {
+        flex: auto;
+    }
 
     .side-menu-icon {
         display: none;
