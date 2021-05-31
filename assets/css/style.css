@@ -584,20 +584,6 @@ media-query
 
 
 @media (min-width: 320px) {
-    header {
-        padding: 0 20px;
-    }
-
-    header .logo {
-        flex-basis: 50%;
-    }
-
-    header .live-news {
-        flex-basis: 40%;
-    }
-
-
-
     #navlinks {
         display: none;
     }
@@ -659,26 +645,10 @@ media-query
 }
 
 @media (min-width: 992px) {
-    header {
-        background-color: #003366;
-        padding: 10px 0;
-        height: 100%;
-    }
-
-    header .logo {
-        flex-basis: auto;
-    }
-
-
-
-    header .live-news {
-        flex-basis: auto;
-    }
 
     .side-menu-icon {
         display: none;
     }
-
 
     #navlinks {
         display: block;
