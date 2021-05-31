@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <script src="assets/js/script.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="row navbar">
+                <div class="logo">
+                    <img src="assets/images/svglogo.svg" alt="">
+                </div>
+                <nav class="navigation-menu" id="navlinks">
+                    <ul class="d-flex">
+                        <li class="active"><a href="javascript:void(0)">Home</a></li>
+                        <li><a href="javascript:void(0)">World</a></li>
+                        <li><a href="javascript:void(0)">US News</a></li>
+                        <li><a href="javascript:void(0)">Business</a></li>
+                        <li><a href="javascript:void(0)">Health</a></li>
+                        <li><a href="javascript:void(0)">Entertaintment</a></li>
+                        <li><a href="javascript:void(0)">Sports</a></li>
+                        <li><a href="javascript:void(0)">Science</a></li>
+                        <li><a href="javascript:void(0)">Technology</a></li>
+                    </ul>
+                </nav>
+                <div class="live-news live-news-sec">
+                    <span class="notification-icon"></span>
+                    <span>Live News</span>
+                </div>
+                <div class="side-menu-wrap">
+                    <div onclick="togglemenu()" class="side-menu-icon ">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <nav class="mobile-menu" id="mobile-menu">
+                    <ul class="d-flex">
+                        <li class="active"><a href="javascript:void(0)">Home</a></li>
+                        <li><a href="javascript:void(0)">World</a></li>
+                        <li><a href="javascript:void(0)">US News</a></li>
+                        <li><a href="javascript:void(0)">Business</a></li>
+                        <li><a href="javascript:void(0)">Health</a></li>
+                        <li><a href="javascript:void(0)">Entertaintment</a></li>
+                        <li><a href="javascript:void(0)">Sports</a></li>
+                        <li><a href="javascript:void(0)">Science</a></li>
+                        <li><a href="javascript:void(0)">Technology</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="wrapper">
+            <div class="row">
+                <section class="left-section">
+                    <div class="covid-updates">
+                        <div class="section-heading d-flex">
+                            <div class="news-title">
+                                <h2>Covid 19 updates</h2>
+                            </div>
+                        </div>
+                        <div class="row covid-form">
+                            <form class="d-flex w-100">
+                                <div class="form-group w-100">
+                                    <select class="w-100" name="country" id="country-select">
+                                        <option value="USA" selected>USA</option>
+                                        <option value="india">India</option>
+                                    </select>
+                                </div>
+                                <div class="form-group w-100">
+                                    <select class="w-100" name="state" id="state-select" onchange="loaddata()">
+                                    </select>
+                                </div>
+
+                            </form>
+                        </div>
+                        <div class="row covid-cases-section">
+                            <div class="covid-cases">
+                                <h6>Total Cases</h6>
+                                <div class="covid-cases-details d-flex">
+                                    <span><img src="assets/images/total-cases-icon.png" alt=""></span>
+                                    <span>456,567</span>
+                                </div>
+                            </div>
+                            <div class="covid-cases">
+                                <h6>Recoverd Cases</h6>
+                                <div class="covid-cases-details d-flex">
+                                    <span><img src="assets/images/total-cases2-icon.png" alt=""></span>
+                                    <span>456,567</span>
+                                </div>
+                            </div>
+                            <div class="covid-cases">
+                                <h6>Deaths</h6>
+                                <div class="covid-cases-details d-flex">
+                                    <span><img src="assets/images/total-cases-icon.png" alt=""></span>
+                                    <span>456,567</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <section class="top-news">
+                        <div class="section-heading d-flex">
+                            <div class="news-title">
+                                <h2>Top News</h2>
+                            </div>
+                            <div class="slider-angle">
+                                <span><img src="assets/images/left-arrow-icon.png" alt=""></span>
+                                <span><img src="assets/images/right-arrow-icon.png" alt=""></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="article-list d-flex">
+                                <article class="news-article">
+                                    <div class="top-news-image-section">
+                                        <div class="news-image">
+                                            <img src="assets/images/top-news.jpg" class="w-100">
+                                        </div>
+                                        <div class="corner-text">
+                                            <span>World</span>
+                                        </div>
+                                    </div>
+                                    <div class="top-news-details">
+                                        <h6>Protestors face off with the forces of order in DC and New York, as crowds
+                                            gather at
+                                            City Hall in San Francisco</h6>
+                                        <p>Hundreds of people have been arrested overnight after taking part in protests
+                                            across
+                                            America.</p>
+                                    </div>
+                                </article>
+                                <article class="news-article">
+                                    <div class="top-news-image-section">
+                                        <div class="news-image">
+                                            <img src="assets/images/us-news.png" class="w-100">
+                                        </div>
+                                        <div class="corner-text">
+                                            <span>us news</span>
+                                        </div>
+                                    </div>
+                                    <div class="top-news-details">
+                                        <h6>Protestors face off with the forces of order in DC and New York, as crowds
+                                            gather at
+                                            City Hall in San Francisco</h6>
+                                        <p>Hundreds of people have been arrested overnight after taking part in protests
+                                            across
+                                            America.</p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="top-news">
+                        <div class="heading-underline heading-class">
+                            <h6>See also</h6>
+                        </div>
+                        <div class="article-list see-more-section d-flex">
+                            <article class="news-article">
+                                <div class="top-news-image-section">
+                                    <div class="news-image">
+                                        <img src="assets/images/see-also-left.png" class="w-100">
+                                    </div>
+                                    <div class="bottom-text d-flex">
+                                        <div class="upper-text">
+                                            <a href="javacript:void(0);">01. Lorem Ipsum dolor sit amet</a>
+                                        </div>
+                                        <div class="below-text">
+                                            <a href="javacript:void(0);"><img src="assets/images/right-arrow-icon.png"
+                                                    alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="news-article">
+                                <div class="top-news-image-section">
+                                    <div class="news-image">
+                                        <img src="assets/images/see-also-right.png" class="w-100">
+                                    </div>
+                                    <div class="bottom-text d-flex">
+                                        <div class="upper-text">
+                                            <a href="javacript:void(0);">01. Lorem Ipsum dolor sit amet</a>
+                                        </div>
+                                        <div class="below-text">
+                                            <a href="javacript:void(0);"><img src="assets/images/right-arrow-icon.png"
+                                                    alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+
+                    <section class="top-news">
+                        <div class="article-list d-flex">
+                            <article class="news-article news-article1">
+                                <div class="top-news-image-section">
+                                    <div class="news-image">
+                                        <img src="assets/images/top-news.jpg" class="w-100">
+                                    </div>
+                                    <div class="corner-text">
+                                        <span>Business</span>
+                                    </div>
+                                </div>
+                                <div class="top-news-details">
+                                    <h6>Protestors face off with the forces of order in DC and New York, as crowds
+                                        gather at
+                                        City Hall in San Francisco</h6>
+                                    <p>Hundreds of people have been arrested overnight after taking part in protests
+                                        across
+                                        America.</p>
+                                </div>
+                            </article>
+                            <article class="news-article">
+                                <div class="top-news-image-section">
+                                    <div class="news-image">
+                                        <img src="assets/images/us-news.png" class="w-100">
+                                    </div>
+                                    <div class="corner-text">
+                                        <span>Health</span>
+                                    </div>
+                                </div>
+                                <div class="top-news-details">
+                                    <h6>Protestors face off with the forces of order in DC and New York, as crowds
+                                        gather at
+                                        City Hall in San Francisco</h6>
+                                    <p>Hundreds of people have been arrested overnight after taking part in protests
+                                        across
+                                        America.</p>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+
+                    <section class="top-news">
+                        <div class="article-list d-flex">
+                            <article class="news-article news-article1">
+                                <div class="top-news-image-section">
+                                    <div class="news-image">
+                                        <img src="assets/images/entertainment-news.png" class="w-100">
+                                    </div>
+                                    <div class="corner-text">
+                                        <span>Entertaintment</span>
+                                    </div>
+                                </div>
+                                <div class="top-news-details">
+                                    <h6>Protestors face off with the forces of order in DC and New York, as crowds
+                                        gather at
+                                        City Hall in San Francisco</h6>
+                                    <p>Hundreds of people have been arrested overnight after taking part in protests
+                                        across
+                                        America.</p>
+                                </div>
+                            </article>
+                            <article class="news-article">
+                                <div class="top-news-image-section">
+                                    <div class="news-image">
+                                        <img src="assets/images/sports-news.png" class="w-100">
+                                    </div>
+                                    <div class="corner-text">
+                                        <span>Sports</span>
+                                    </div>
+                                </div>
+                                <div class="top-news-details">
+                                    <h6>Protestors face off with the forces of order in DC and New York, as crowds
+                                        gather at
+                                        City Hall in San Francisco</h6>
+                                    <p>Hundreds of people have been arrested overnight after taking part in protests
+                                        across
+                                        America.</p>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+
+                    <section class="top-news">
+                        <div class="section-heading d-flex">
+                            <div class="news-title live-news">
+                                <span class="notification-icon"></span>
+                                <h2>Live News</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="article-list d-flex">
+                                <article class="news-article">
+                                    <div class="top-news-image-section">
+                                        <div class="news-image">
+                                            <img src="assets/images/video-play-left.png" class="w-100">
+                                        </div>
+                                        <div class="center-play-button">
+                                            <a onclick="lightbox_open('youtu.be/PSnSo9kYlH4');"><img
+                                                    src="assets/images/play-button.png" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="top-news-details">
+                                        <h6>Protestors face off with the forces of order in DC and New York, as crowds
+                                            gather at
+                                            City Hall in San Francisco</h6>
+                                        <p>Hundreds of people have been arrested overnight after taking part in protests
+                                            across
+                                            America.</p>
+                                    </div>
+
+                                </article>
+                                <article class="news-article">
+                                    <div class="top-news-image-section">
+                                        <div class="news-image">
+                                            <img src="assets/images/video-play-right.png" class="w-100">
+                                        </div>
+                                        <div class="center-play-button">
+                                            <a onclick="lightbox_open('youtu.be/pRVBZCFS7Go');"><img
+                                                    src="assets/images/play-button.png" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="top-news-details">
+                                        <h6>Protestors face off with the forces of order in DC and New York, as crowds
+                                            gather at
+                                            City Hall in San Francisco</h6>
+                                        <p>Hundreds of people have been arrested overnight after taking part in protests
+                                            across
+                                            America.</p>
+                                    </div>
+
+                                </article>
+                                <div id="light">
+                                    <a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
+                                    <video id="covidvideo" width="600" controls>
+                                        <source src="" type="video/mp4">
+                                    </video>
+                                </div>
+                                <div id="fade" onClick="lightbox_close();"></div>
+                            </div>
+                        </div>
+
+                    </section>
+
+                </section>
+
+
+                <aside>
+                    <div class="sidebar">
+                        <div class="heading-underline">
+                            <h6>Don't Miss</h6>
+                        </div>
+                        <div class="row">
+                            <div class="sidebar-elements d-flex">
+                                <div class="sidebar-img">
+                                    <img src="assets/images/demo.jpg" class="w-100">
+                                </div>
+                                <div class="sidebar-content">
+                                    <h6>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    </h6>
+                                </div>
+                            </div>
+                            <div class="sidebar-elements d-flex">
+                                <div class="sidebar-img">
+                                    <img src="assets/images/demo.jpg" class="w-100">
+                                </div>
+                                <div class="sidebar-content">
+                                    <h6>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    </h6>
+                                </div>
+                            </div>
+                            <div class="sidebar-elements d-flex">
+                                <div class="sidebar-img">
+                                    <img src="assets/images/demo.jpg" class="w-100">
+                                </div>
+                                <div class="sidebar-content">
+                                    <h6>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    </h6>
+                                </div>
+                            </div>
+                            <div class="sidebar-elements d-flex">
+                                <div class="sidebar-img">
+                                    <img src="assets/images/demo.jpg" class="w-100">
+                                </div>
+                                <div class="sidebar-content">
+                                    <h6>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    </h6>
+                                </div>
+                            </div>
+                            <div class="sidebar-elements d-flex">
+                                <div class="sidebar-img">
+                                    <img src="assets/images/demo.jpg" class="w-100">
+                                </div>
+                                <div class="sidebar-content">
+                                    <h6>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="sidebar-links">
+                        <div class="heading-underline">
+                            <h6>See also</h6>
+                        </div>
+
+
+                        <ul>
+                            <li>
+                                <div class="bottom-text d-flex">
+                                    <div class="upper-text">
+                                        <a href="javacript:void(0);">1. Lorem Ipsum dolor sit amet</a>
+                                    </div>
+                                    <div class="below-text">
+                                        <a href="javacript:void(0);"><img src="assets/images/right-arrow-icon.png"
+                                                alt=""></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="bottom-text d-flex">
+                                    <div class="upper-text">
+                                        <a href="javacript:void(0);">2. Lorem Ipsum dolor sit amet</a>
+                                    </div>
+                                    <div class="below-text">
+                                        <a href="javacript:void(0);"><img src="assets/images/right-arrow-icon.png"
+                                                alt=""></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="bottom-text d-flex">
+                                    <div class="upper-text">
+                                        <a href="javacript:void(0);">3. Lorem Ipsum dolor sit amet</a>
+                                    </div>
+                                    <div class="below-text">
+                                        <a href="javacript:void(0);"><img src="assets/images/right-arrow-icon.png"
+                                                alt=""></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="bottom-text d-flex">
+                                    <div class="upper-text">
+                                        <a href="javacript:void(0);">4. Lorem Ipsum dolor sit amet</a>
+                                    </div>
+                                    <div class="below-text">
+                                        <a href="javacript:void(0);"><img src="assets/images/right-arrow-icon.png"
+                                                alt=""></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="bottom-text d-flex">
+                                    <div class="upper-text">
+                                        <a href="javacript:void(0);">5. Lorem Ipsum dolor sit amet</a>
+                                    </div>
+                                    <div class="below-text">
+                                        <a href="javacript:void(0);"><img src="assets/images/right-arrow-icon.png"
+                                                alt=""></a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                </aside>
+            </div>
+        </div>
+
+    </main>
+    <div class="go-to-top">
+        <button onclick="topFunction()" id="myBtn">
+            <img src="assets/images/go-top.png">
+        </button>
+    </div>
+    <div class="desc-content">
+        <div class="wrapper">
+            <p>
+                The information/statistics provided on the site are sourced from third-party websites. We do not warrant
+                the accuracy of such information & statistics. Our use of such third-party content on our site does not
+                construe any affiliation with or endorsement by the owners of such third-party sites.
+            </p>
+        </div>
+    </div>
+    <footer>
+        <div class="wrapper">
+            <div class="row navbar">
+                <div class="logo">
+                    <img src="assets/images/svglogo.svg" alt="">
+                </div>
+                <div class="footer-links">
+                    <ul class="d-flex">
+                        <li><a href="javascript:void(0)">Privacy Policy</a></li>
+                        <li><a href="javascript:void(0)">Terms of Service</a></li>
+                        <li><a href="javascript:void(0)">Contact Us</a></li>
+                        <li><a href="javascript:void(0)">Uninstall</a></li>
+                        <li><a href="javascript:void(0)">Unsubscribe</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+
+    </script>
+</body>
+
+</html>

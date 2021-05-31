@@ -1,0 +1,1 @@
+1. Few of the images like logo, sidebar images are not able to download png format thats why i have used there svg format and dummy images.
